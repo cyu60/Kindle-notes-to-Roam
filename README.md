@@ -15,6 +15,8 @@ This is a personal attempt to import non-Amazon kindle highlights from documents
 ** NOTE: The file "MyClippings.txt" must be copied into the same directory from Kindle
 The 'My Clippings.txt' file is located in the 'Documents' folder. You will need to connect your Kindle to your computer via the USB port and browse to the 'Documents' folder in your file browser.
 
+### To run the program, either compile it in C++ in your local machine or run the .exe file.
+
 ## Raw Text
 ```txt
 Shoe Dog: A Memoir by the Creator of Nike \( PDFDrive.com \).mobi (Phil Knight)
