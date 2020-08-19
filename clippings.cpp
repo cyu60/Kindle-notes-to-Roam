@@ -40,9 +40,8 @@ using std::vector;
 int main()
 {
     // Open a file and read in line by line
-    // string inFilename = "Duplicates.txt";
-    string inFilename = "Test Clippings.txt.txt";
-    // string inFilename = "My Clippings.txt";
+    // string inFilename = "Test Clippings.txt"; // Used for testing purposes 
+    string inFilename = "My Clippings.txt"; // Edit the path directory to your Clippings doc
 
     string line;
     ifstream myfile(inFilename);
@@ -60,15 +59,6 @@ int main()
     else
         cout << "Unable to open file";
 
-    // Show the files
-    /*
-    for (vector<string>::const_iterator it = allLine.cbegin();
-         it != allLine.cend();
-         ++it)
-    {
-        cout << *it << "\n";
-    }
-    */
 
     // Get source tag
     char userConfirmation;
@@ -88,8 +78,6 @@ int main()
     } while (!cin.fail() && userConfirmation != 'y');
 
     //create a map of <string, vector <string>> store book name + highlights
-    // should store vector of pairs?? <meta, clip> ??
-    // Prints only highlights
     int curLine = 0;
     string lastBook = "";
     string curBook = "";
@@ -132,10 +120,8 @@ int main()
             {
             case 'H':
 
-                // Help avoid highlights-- remove unecessary
+                // Help avoid highlights-- remove unecessary duplicates
                 curClip = *it;
-                // cout << curClip.find(lastClip) << " - printed\n";
-                // cout << *it << "\n";
                 if (curClip.find(lastClip) == 0 || lastClip.find(curClip) == 0)
                 { // curClip contains last clip
                     BookNotes[curBook].pop_back();
@@ -184,7 +170,6 @@ int main()
         cout << "Are you sure? [y]" << endl;
         cin >> userConfirmation;
     } while (!cin.fail() && userConfirmation != 'y');
-    // && userOption >= 0 && userOption < BookList.size()
 
     // Final printing
     stringstream ss;
