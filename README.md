@@ -1,16 +1,16 @@
 # Kindle-notes-to-Roam
-Format your Kindle Clippings.txt for Roam Research using C++.
+Format your Kindle MyClippings.txt for Roam Research using C++.
 
 This is a personal project that is not affilated with Amazon or Roam.
 
 This is a personal attempt to import non-Amazon kindle highlights from documents.
 
 ## Features
-- Indentifies individual books (Allow you to choose book to import from)
+- Indentifies individual sources (Allow you to choose book to import from)
 - Indentify Notes from highlights and make then child elements in italics
 - Allow you to add tags to the end of the highlights
 - Automatically skips over duplicate hightlights
-- Writes your notes markdown into an external file "out.txt"
+- Writes your notes markdown into an external file "out.txt" that can be copied over to Roam
 
 ** NOTE: The file "MyClippings.txt" must be copied into the same directory from Kindle
 The 'My Clippings.txt' file is located in the 'Documents' folder. You will need to connect your Kindle to your computer via the USB port and browse to the 'Documents' folder in your file browser.
