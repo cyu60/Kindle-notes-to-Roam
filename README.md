@@ -1,5 +1,5 @@
 # Kindle-notes-to-Roam
-Format your Kindle Clippings.txt for Roam Research
+Format your Kindle Clippings.txt for Roam Research using C++.
 
 This is a personal project that is not affilated with Amazon or Roam.
 
